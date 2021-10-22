@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Piano from "./Piano";
+import Effect from "./Effects/Effect";
+
 function App() {
+
   return (
-    <div className="app-container">
+    <>
+    <Effect />
+    {/* <div className="app-container"> */}
       <Piano />
-    </div>
+    {/* </div> */}
+    </>
   );
 }
 
