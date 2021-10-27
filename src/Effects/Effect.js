@@ -44,7 +44,7 @@ function Effect() {
         let red = Math.round(Math.random() * 255);
         let green = Math.round(Math.random() * 255);
         let blue = Math.round(Math.random() * 255);
-        let bubble = new Bubble(Math.round(Math.random() * (width - 100)), Math.round(Math.random() * (height - 100)), 100, red, green, blue, e.keyCode, false)
+        let bubble = new Bubble(Math.round(Math.random() * (width - 100)), Math.round(Math.random() * (height - 100)), (Math.random() * 80 + 20), red, green, blue, e.keyCode, false)
         bubbles.push(bubble)
         //console.log(e.keyCode)
         //p5.ellipse(bubble.x, bubble.y, bubble.radius)
@@ -52,7 +52,7 @@ function Effect() {
     };
 
     const onKeyUp = (e) => { // p5.background(100,100,0);
-        console.log(e.keyCode)
+        //console.log(e.keyCode)
         for (const bubble of bubbles) {
             if (bubble.keyCode === e.keyCode) {
                 bubble.startFade = true;
