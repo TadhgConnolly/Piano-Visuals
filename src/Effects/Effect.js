@@ -37,6 +37,9 @@ function Effect() {
             p5.fill(p5.color(bubble.red, bubble.green, bubble.blue, bubble.fade))
             p5.ellipse(bubble.x, bubble.y, bubble.radius)  
         }
+        if (bubbles.length > 4) {
+            bubbles.shift()
+        }
 
     }
 
@@ -46,9 +49,11 @@ function Effect() {
         let blue = Math.round(Math.random() * 255);
         let bubble = new Bubble(Math.round(Math.random() * (width - 100)), Math.round(Math.random() * (height - 100)), (Math.random() * 80 + 20), red, green, blue, e.keyCode, false)
         bubbles.push(bubble)
+        console.log(bubbles)
         //console.log(e.keyCode)
         //p5.ellipse(bubble.x, bubble.y, bubble.radius)
         //p5.fill(bubble.fill)
+        
     };
 
     const onKeyUp = (e) => { // p5.background(100,100,0);
