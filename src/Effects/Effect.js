@@ -35,7 +35,14 @@ function Effect() {
                 } 
             }
             p5.fill(p5.color(bubble.red, bubble.green, bubble.blue, bubble.fade))
-            p5.ellipse(bubble.x, bubble.y, bubble.radius)  
+            //p5.ellipse(bubble.x, bubble.y, bubble.radius)
+            p5.translate(500, 300)
+            p5.noStroke()
+            for (let i = 0; i < 10; i ++) {
+                p5.ellipse(0, 30, 20, 80);
+                p5.rotate(Math.PI/5);
+              }
+
         }
         if (bubbles.length > 4) {
             bubbles.shift()
