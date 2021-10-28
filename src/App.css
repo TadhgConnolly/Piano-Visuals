@@ -37,7 +37,7 @@
 
 .piano-natural-key-playing {
   border-bottom: 10px solid blue;
-  color: blue;
+  /* color: blue; */
 }
 
 .piano-accidental-key-wrapper {
@@ -58,6 +58,11 @@
   padding: 5px;
   outline: none;
   color: #dbdbdd;
+}
+
+.piano-accidental-key-playing {
+  border-bottom: 10px solid blue;
+  /* color: blue; */
 }
 
 .wrapper {
