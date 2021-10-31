@@ -7,10 +7,14 @@ function App() {
 
   return (
     <>
-    <Effect />
-    {/* <div className="app-container"> */}
-      <Piano />
-    {/* </div> */}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+    <div class="wrapper">
+      <Effect id="effect"/> 
+      <div className="app-container">
+        <Piano id="piano"/>
+      </div>
+    </div>
     </>
   );
 }
